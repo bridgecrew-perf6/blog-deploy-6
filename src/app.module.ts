@@ -14,11 +14,11 @@ import { LoginModule } from './login/login.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: '123456',
-      database: 'blog',
+      host: 'ec2-174-129-37-144.compute-1.amazonaws.com',
+      port: 5432,
+      username: 'eishtkfjrtbqil',
+      password: '5f71429858344ba285f1b64e5e8c10cacc8957322b0aabfe9a710f46f36a60bf',
+      database: 'd88njs9vjrt953',
       entities: [User,tblBlogList],
       synchronize: true,
       autoLoadEntities: true,
