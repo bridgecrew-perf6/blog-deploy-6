@@ -13,7 +13,7 @@ import { LoginModule } from './login/login.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql',
+      type: 'postgres',
       host: 'ec2-174-129-37-144.compute-1.amazonaws.com',
       port: 5432,
       username: 'eishtkfjrtbqil',
@@ -22,8 +22,6 @@ import { LoginModule } from './login/login.module';
       entities: [User,tblBlogList],
       synchronize: true,
       autoLoadEntities: true,
-      timezone: 'UTC',
-      charset: 'utf8mb4'
     }),
     BlogServerModule,
     LoginModule,
