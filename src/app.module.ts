@@ -13,12 +13,12 @@ import { LoginModule } from './login/login.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'ec2-174-129-37-144.compute-1.amazonaws.com',
-      port: 5432,
-      username: 'eishtkfjrtbqil',
-      password: '5f71429858344ba285f1b64e5e8c10cacc8957322b0aabfe9a710f46f36a60bf',
-      database: 'd88njs9vjrt953',
+      type: 'sqlite',
+      //host: 'ec2-174-129-37-144.compute-1.amazonaws.com',
+      //port: 5432,
+      //username: 'eishtkfjrtbqil',
+      //password: '5f71429858344ba285f1b64e5e8c10cacc8957322b0aabfe9a710f46f36a60bf',
+      database: './test.db',
       entities: [User,tblBlogList],
       synchronize: true,
       autoLoadEntities: true,
